@@ -106,12 +106,21 @@ var a = "b";
 Number(a); // NaN
 typeof Number(a); // number
 ```
-`parseInt()` un `parseFloat()` pieņem divus argumentus: mainīgo vai vērtību un skaitīšanas sistēmu kurā ir dots mainīgais vai vērtība ar kuru
 
+`parseInt()` konvertē vērtību par veselo skaitli. `parseInt()` pieņem divus argumentus: mainīgo vai vērtību un skaitīšanas sistēmu, kurā ir dots mainīgais vai vērtība:
 ```js
 var a = "20px";
 typeof a // 'string'
 var b = parseInt(a, 10); // 20
+typeof b // 'number'
+```
+
+`parseFloat()` konvertē vērtību par decimāldaļskaitli:
+
+```js
+var a = "20.2px";
+typeof a // 'string'
+var b = parseInt(a); // 20
 typeof b // 'number'
 ```
 
