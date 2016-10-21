@@ -1,2 +1,3 @@
 # JavaScript-basic
-JavaScript Basic module in Webskola
+
+- [JavaScript (latviski)](README.lv.md)
