@@ -252,3 +252,8 @@ name: Vasilijs
 surname: Žukovs
 job: developer
 ```
+
+
+## Piemēri:
+
+- (Vienkāršā galerija)[http://codepen.io/seleckis/pen/NRZyvQ?editors=0010]
