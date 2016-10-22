@@ -94,11 +94,6 @@ Skaitlis. `typeof x == 'number'`.
 - 0.314e2
 - NaN — not a number.
 
-```js
-var a = 0;
-typeof a // 'number'
-```
-
 Pārvērst par skaitli var jebkuru cita datu tipa vērtību izmantojot kontruktoru `Number()` vai funkcijas `parseInt()` un `parseFloat()`.
 
 ```js
@@ -132,11 +127,75 @@ var b = Number(a); // NaN
 typeof b; // number
 ```
 
+Aritmētiskie operātori:
+
+	=   -   *   /   %
+
+```js
+var a = 6, b = 8;
+console.log(a + b); // 14
+console.log(a - b); // -2
+console.log(a * b); // 48
+console.log(a / b); // 0.75
+```
+
+Operātors `%` dala kreiso daļu ar labo un atgriež skaitītāju:
+
+```js
+var a = 14, b = 3;
+console.log(a % b); // 2, jo 14/3 = 4 un 2/3.
+```
+
+Salīdzināšanas operatori:
+
+	<   <=   >   >=   !=   ==
+
+```js
+var a = 6, b = 8;
+console.log(a > b); // false
+console.log(a < b); // true
+console.log(a == b); // false
+console.log(a != b); // true
+```
+
 ### String
 
 Virkne. `typeof x == 'string'`.
 
-*… turpinājums sekos …*
+-	"Hello"
+- 'World'
+
+Pārvērst par virkni var jebkuru cita datu tipa vērtību izmantojot kontruktoru `String()` vai funkciju `toString()`.
+
+```js
+var a = 8;
+ var b = a.toString(2);
+console.log(b); // '1000'
+```
+
+Ir iespējams saņemt virknes simbolu pēc indeksa, bet nomainīt to nav iespējams.
+
+```js
+var a = 'ABC'; 
+console.log(a[0]); // 'A'
+ a[0] = 'D';
+ console.log(a); // 'ABC'
+```
+
+Virknes var apvienot ar operātora `+` palīdzību.
+
+```js
+var a = 'abc';
+ a = a + 'd';
+ a; // 'abcd'"
+```
+
+Virknes var salīdzināt ar operātoriem:
+<   <=   >   >=   !=   ==	"a' > 'A' // true
+'a' <= 'b' // false
+'a' == 'a' // true
+'a' != 'A' // true"
+
 
 ### Function
 
